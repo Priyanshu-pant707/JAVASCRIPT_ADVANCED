@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 text-gray-800 font-sans">
+    <div class="bg-blue-500 text-gray-800 p-4">
+        <h1 class="text-7xl font-bold text-center">Welcome to the Color Pages</h1>
+        <p class="mt-2 text-sm text-center">Explore various colors and their meanings.</p>
+    </div>
+      
+    <div class="flex flex-col md:flex-col gap-5 items-center justify-center min-h-[80vh]">
+        <div class="p-4 w-[50%] bg-gray-400 rounded-lg shadow-lg">
+            <h1 class="text-4xl text-center font-semibold">Color Palette</h1>
+            <hr>
+            <div class="mt-4 grid grid-cols-3 gap-4">
+                <button id="red" class=" button bg-red-500 text-white p-4 rounded-full hover:bg-red-600 hover:text-gray-300 transition-all duration-300 ease-in-out cursor-pointer text-center shadow-lg">Red</button>
+                <button id="green"
+                class="button bg-green-500 text-white p-4 rounded-full hover:bg-green-600 hover:text-gray-300 transition-all duration-300 ease-in-out cursor-pointer text-center shadow-lg">Green</button>
+                <button id="blue"
+                 class="button bg-blue-500 text-white p-4 rounded-full hover:bg-blue-600 hover:text-gray-300 transition-all duration-300 ease-in-out cursor-pointer text-center shadow-lg">Blue</button>
+                <button  id="yellow"
+                class="button bg-yellow-500 text-white p-4 rounded-full hover:bg-yellow-600 hover:text-gray-300 transition-all duration-300 ease-in-out cursor-pointer text-center shadow-lg">Yellow</button>
+                <button id="purple" 
+                class="button bg-purple-500 text-white p-4 rounded-full hover:bg-purple-600 hover:text-gray-300 transition-all duration-300 ease-in-out cursor-pointer text-center shadow-lg">Purple</button>
+                <button id="pink" 
+                class="button bg-pink-500 text-white p-4 rounded-full hover:bg-pink-600 hover:text-gray-300 transition-all duration-300 ease-in-out cursor-pointer text-center shadow-lg">Pink</button>
+
+                
+            </div>
+            
+        </div>
+         <button id="reset" 
+                class="button bg-orange-800 text-white text-xl px-4 rounded hover:bg-orange-600 hover:text-gray-300 transition-all duration-300 ease-in-out cursor-pointer text-center shadow-lg">Reset</button>
+    </div>
+
+    <footer>
+        <div class="bg-gray-800 text-gray-400 p-4 text-center">
+            <p class="text-m">© 2023 Color Pages. All rights reserved. 
+                <span class="text-sm">Created BY : <span class="text-cyan-600 font-medium">Priyanshu Pant</span></span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
