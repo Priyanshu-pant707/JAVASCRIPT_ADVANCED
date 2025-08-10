@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="headerH1  font-black text-6xl"> Git hub Info tracker</h1>
+    </header>
+
+    <h2 class="text-4xl font-medium text-gray-800">get-user-details</h2>
+
+
+    <div class="mb-6 flex gap-2">
+    <input id="usernameInput" type="text" placeholder="Enter GitHub username"
+        class="p-2 rounded border border-gray-300 text-black" />
+    <button id="searchBtn"
+        class="bg-cyan-500 text-white px-4 py-2 rounded hover:bg-cyan-600">
+        Search
+    </button>
+</div>
+
+<section class="firstSection ">
+    <div class="leftsection text-white font-bold flex flex-col items-center gap-4 justify-center">
+        <div class="profileImg">
+            <img id="profileImage" src="https://avatars.githubusercontent.com/u/9919?v=4"
+                alt="Profile Image" class="w-32 h-32 rounded-full hover:scale-110 transition-transform duration-300  hover:rotate-[2deg]" >
+        </div>
+        <div class="username"><span class="text-2xl font-bold text-gray-800">Username: </span><span id="username"
+                class="text-xl text-gray-600">User Name</span></div>
+            
+
+        </span></div>
+    </div>
+    <div class="rightsection text-white font-bold overflow-hidden">
+        <div class="userDetails w-[100%] ">
+            <div class="userDetailsItem">
+                <span class="text-2xl font-bold text-gray-800">Name: </span><span id="name"
+                    class="text-xl text-gray-600">User Name</span>
+            </div>
+            <div class="userDetailsItem">
+                <span class="text-2xl font-bold text-gray-800">Bio: </span><span id="bio"
+                    class="text-xl text-gray-600">User Bio</span>
+            </div>
+            <div class="userDetailsItem">
+                <span class="text-2xl font-bold text-gray-800">Location: </span><span id="location"
+                    class="text-xl text-gray-600">User Location</span>
+            </div>
+            <div class="userDetailsItem">
+                <span class="text-2xl font-bold text-gray-800">Followers: </span><span id="followers"
+                    class="text-xl text-gray-600">0</span>
+            </div>
+            <div class="userDetailsItem">
+                <span class="text-2xl font-bold text-gray-800">Following: </span><span id="following"
+                    class="text-xl text-gray-600">0</span>
+            </div>
+      
+       
+    </div>
+</section>
+    <span class="text-3xl font-medium text-gray-700"> Users Repo information</span>
+
+
+    <section class="repoSection  ">
+        <h3 class="font-bold"> Repo - Details</h3>
+     
+
+    </section>
+
+    <footer class="w-full text-center p-4  text-gray-300 text-sm mt-6">
+        <span>MadeBy@<span class="font-bold   text-2xl text-cyan-500">P</span>riyanshu<span class="font-bold   text-2xl text-cyan-500">P</span>ant</span>
+ 
+    </footer>
+
+
+    <div class="sidebar absolute top-0 left-0 p-6   w-15">
+    
+ <div class="sidebar">
+    <div class="sidebarimg" id="logoContainer">
+        <!-- JS se images yaha add hongi -->
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

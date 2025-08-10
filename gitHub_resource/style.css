@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    background-color: rgba(31, 85, 87, 0.728);
+    color: rgb(22, 30, 37);
+
+    width: 100%;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+header {
+
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    width: 90%;
+    padding: 20;
+    margin-top: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header:hover {
+    border-radius: 30%;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+
+    background-color: rgba(0, 0, 0, 0.546);
+    color: antiquewhite;
+    transition: all 0.3s ease-in-out;
+
+
+
+}
+
+.firstSection {
+    padding: 25px;
+    border-radius: 30px;
+    background-color: rgba(2, 81, 42, 0.283);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+h2:hover {
+    font-weight: 900;
+    color: rgba(4, 53, 63, 0.402);
+    transition: all 0.3s ease-in-out;
+}
+
+.leftsection {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(216, 205, 205, 0.148);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 35px;
+
+}
+
+.rightsection {
+    width: 50%;
+    height: 100%;
+  
+    text-align: center;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.repoSection {
+    width: 80%;
+    height: 40vh;
+    background: #00000056;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.repoDetails {
+    width: 90%;
+    padding: 20px;
+    background: #0000000f;
+    margin-left: 40px;
+    box-shadow: 0px 2px 5px rgba(0, 208, 255, 0.331);
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.sidebar {
+    position: fixed;
+    left: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 300px;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 2px 0px 10px rgba(2, 190, 34, 0.954);
+    background: #0000003d;
+}
+
+.sidebarimg {
+    display: flex;
+    flex-direction: column;
+    animation: scrollUp 10s linear infinite;
+}
+
+.sidebar:hover .sidebarimg {
+    animation-play-state: paused; 
+}
+
+.sidebarimg a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebarimg img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 10px auto;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.sidebarimg img:hover {
+    transform: scale(1.2);
+}
+
+@keyframes scrollUp {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-50%); }
+}
