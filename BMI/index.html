@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gradient-to-br from-gray-200 to-gray-400 min-h-screen text-gray-900 flex flex-col">
+
+    <header class="bg-gradient-to-r from-blue-500 to-purple-500 shadow-lg p-6 text-center text-white">
+        <h1 class="text-5xl font-extrabold tracking-wide"><span class="italic">BMI</span> CALCULATOR</h1>
+        <p class="mt-2 text-lg opacity-90">Check your Body Mass Index and see where you stand</p>
+    </header>
+
+
+    <section class="firstSection mt-8 text-center px-6">
+        <h2 class="text-3xl font-semibold text-blue-700 mb-4">About</h2>
+        <p class="max-w-2xl mx-auto text-gray-800">
+            The Body Mass Index (BMI) is a quick way to check if your weight is healthy for your height.
+            It helps identify if you're underweight, healthy, overweight, or obese. Maintaining a healthy BMI can
+            improve your overall health and well-being.
+        </p>
+    </section>
+
+
+    <section class="mt-10 px-6 w-[60%] m-auto">
+        <h2 class="text-2xl font-bold text-center text-purple-700 mb-4">BMI Categories</h2>
+        <div class="overflow-x-auto">
+            <table class="w-full text-left border border-gray-300 rounded-lg overflow-hidden shadow-md">
+                <thead class="bg-gradient-to-r from-purple-500 to-blue-500 text-white">
+                    <tr>
+                        <th class="p-3">Category</th>
+                        <th class="p-3">BMI Range</th>
+                    </tr>
+                </thead>
+                <tbody class="bg-white">
+                    <tr class="hover:bg-gray-100">
+                        <td class="p-3">Underweight</td>
+                        <td class="p-3">Less than 18.5</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100">
+                        <td class="p-3">Optimum Range</td>
+                        <td class="p-3">18.5 – 24.9</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100">
+                        <td class="p-3">Overweight</td>
+                        <td class="p-3">25 – 29.9</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100">
+                        <td class="p-3">Class I Obesity</td>
+                        <td class="p-3">30 – 34.9</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100">
+                        <td class="p-3">Class II Obesity</td>
+                        <td class="p-3">35 – 39.9</td>
+                    </tr>
+                    <tr class="hover:bg-gray-100">
+                        <td class="p-3">Class III Obesity</td>
+                        <td class="p-3">More than 40</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+
+    <section class="mt-10 flex-grow">
+        <h2 class="text-3xl font-semibold text-center underline text-blue-800 mb-4">Enter Your Details</h2>
+        <div class="max-w-lg mx-auto bg-white p-6 rounded-xl shadow-lg">
+            <form class="flex flex-col gap-4">
+                <label for="weight" class="font-medium text-gray-700">Weight (kg):</label>
+                <input id="weight" type="number" placeholder="Enter your weight"
+                    class="p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+
+                <label for="height" class="font-medium text-gray-700">Height (cm):</label>
+                <input id="height" type="number" placeholder="Enter your height"
+                    class="p-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+
+                <button id="clcBtn" type="button"
+                    class="bg-gradient-to-r from-blue-500 to-purple-500 text-white font-medium px-4 py-2 rounded-lg hover:scale-105 transition-transform duration-300">
+                    Calculate BMI
+                </button>
+            </form>
+
+
+            <div id="result" class="mt-4 text-center text-lg font-semibold"></div>
+        </div>
+    </section>
+
+
+    <footer class="bg-gradient-to-r from-gray-200 to-gray-900 text-white mt-10 py-2 text-center">
+        <p class="mb-2">Made with ❤️ by Priyanshu Pant
+
+            <a href="https://github.com/Priyanshu-pant707" target="_blank"
+                class="inline-block px-4 py-2 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg shadow-lg hover:scale-105 transition-transform duration-300 font-medium">
+                🌐 Visit My GitHub
+            </a>
+        </p>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
